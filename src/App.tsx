@@ -1,11 +1,8 @@
-import { DemoSteps } from "./components/demoSteps";
-/*import { SignUp } from "./components/signup";*/
-
+import { DemoSteps } from "./components/demoSteps"
 export default function App() {
 
   return (
     <DemoSteps />
-
   )
 }
 

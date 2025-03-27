@@ -1,3 +1,5 @@
+"use client"
+
 import { AnimatedBubble } from "../ui/animatedBubble";
 import { bubbleDataArr } from "../data/animatedBubbleData";
 

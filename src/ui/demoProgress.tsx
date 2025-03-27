@@ -1,16 +1,13 @@
-import { useState } from "react"
 import { ProgressStepsData } from "../data/progresStepsData"
 import { ProgresSteps } from "./progresSteps"
 import { motion } from "framer-motion"
 
+type progress = {
+  progress: number,
+}
 
-export const DemoProgress = () => {
+export const DemoProgress = ({ progress }: progress) => {
 
-  const [progress, setProgress] = useState<number>(0)
-
-  const onClickHandler = () => {
-    setProgress((prev) => Math.min(prev + 100 / 10, 100))
-  }
 
   return (
     <div className="flex w-full h-full p-6 top-2 gap-6">
@@ -22,9 +19,6 @@ export const DemoProgress = () => {
         >
         </motion.div>
         {ProgressStepsData.map((items, index) => (<ProgresSteps key={index} {...items} progress={progress} />))}
-      </div>
-      <div>
-        <button className="bg-gray-200 border border-amber-100 rounded-2xl w-fit h-fit p-2" onClick={onClickHandler}>Progress</button>
       </div>
     </div>
   )
