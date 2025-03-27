@@ -1,15 +1,14 @@
-import { SignUp } from "./components/signup"
+import { DemoSteps } from "./components/demoSteps";
+/*import { SignUp } from "./components/signup";*/
 
-
-function App() {
-
-
+export default function App() {
 
   return (
-    <div>Helo</div>
+    <DemoSteps />
+
   )
 }
 
-export default App
+
 
 
