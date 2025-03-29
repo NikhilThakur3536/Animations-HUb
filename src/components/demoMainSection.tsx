@@ -16,6 +16,7 @@ export const DemoMainSection = ({ clickHandler }: props) => {
           <h3 className="w-full h-12 font-semibold text-3xl mb-2 text-[#304D69]">Heading</h3>
           <h3 className="w-full h-12 text-[#6B829A] text-xl">Sub Heading</h3>
         </div>
+          /**/
         <div className="w-[90%] h-[65%] bg-gray-100 rounded-xl ml-14 border-2 border-dashed ">
 
         </div>

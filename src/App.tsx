@@ -1,8 +1,13 @@
-import { DemoSteps } from "./components/demoSteps"
+"use client"
+
+import { SpiralAnimationOnText } from "./components/spiralanimationontext"
+
 export default function App() {
 
   return (
-    <DemoSteps />
+
+    <SpiralAnimationOnText />
+
   )
 }
 
