@@ -16,6 +16,8 @@ export default function App() {
         <form className="w-full flex flex-col items-center">
           {InputFieldsData.map((item, index) => (<Inputfields key={index} {...item} />))}
         </form>
+        <hr className="w-[80%] h-1 text-white/30 mt-2 mb-2" />
+        <button className="w-[80%] h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-xl text-center text-white font-bold text-2xl">Sign UP</button>
       </div>
     </div>
   )
