@@ -1,6 +1,5 @@
 "use client"
 
-import { CgTv } from "react-icons/cg"
 import { FeaturesCard } from "../ui/featurecards"
 import { FeaturesCardData } from "../data/featurecarddata"
 

@@ -1,12 +1,14 @@
 "use client"
+
+import { CgAdd } from "react-icons/cg";
 import { InputFieldProps } from "../data/InputFieldsData";
 
-export const Inputfields = ({ icon: Icon, placeholderText, heading, type }: InputFieldProps) => {
+export const Inputfields = ({ placeholderText, heading, type }: InputFieldProps) => {
   return (
-    <div className="z-10 relative flex flex-col w-full h-[15%] mb-2">
-      <h3 className="text-[#304D69] text-md font-medium mb-1 ">{heading} </h3>
-      <div className="absolute transform translate-y-9.5 translate-x-2"><Icon size={20} className="text-[#6B829A] " /></div>
-      <input placeholder={placeholderText} type={type} className="focus:outline-none placeholder:text-[#6B829A] border border-[#6B829A]/30 p-2 rounded-xl pl-10  bg-[#ECF0F6] text-[#6B829A]" />
+    <div className="mb-2 w-[80%]">
+      <label className="block w-full h-8 mb-1 text-xl text-white">{heading}</label>
+      <input type={type} placeholder={placeholderText} className="focus:outline-none bg-slate-300/20 text-white border border-white/20 rounded-2xl w-full h-10 pl-8 placeholder:ml-8 relative" />
+      <CgAdd className="text-white/50 absolute   transform -translate-y-7.5 translate-x-2" size={20} />
     </div>
 
   );
